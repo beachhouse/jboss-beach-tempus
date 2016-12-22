@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.jboss.beach.tempus</groupId>
+    <artifactId>tempus</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>Tempus</name>
+
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/bin</directory>
+            </resource>
+        </resources>
+    </build>
+
+    <scm>
+        <connection>scm:git:https://github.com/beachhouse/jboss-beach-tempus.git</connection>
+        <developerConnection>scm:git:git@github.com:beachhouse/jboss-beach-tempus.git</developerConnection>
+        <url>https://github.com/beachhouse/jboss-beach-tempus</url>
+      <tag>HEAD</tag>
+  </scm>
+
+</project>
