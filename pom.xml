@@ -4,7 +4,7 @@
 
     <groupId>org.jboss.beach.tempus</groupId>
     <artifactId>tempus</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <name>Tempus</name>
 
@@ -28,7 +28,7 @@
         <connection>scm:git:https://github.com/beachhouse/jboss-beach-tempus.git</connection>
         <developerConnection>scm:git:git@github.com:beachhouse/jboss-beach-tempus.git</developerConnection>
         <url>https://github.com/beachhouse/jboss-beach-tempus</url>
-      <tag>0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
