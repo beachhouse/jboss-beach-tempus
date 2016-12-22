@@ -4,7 +4,8 @@ set -ex
 # http://maven.apache.org/maven-release/maven-release-plugin/prepare-mojo.html
 
 version=`git describe --tags || { echo -n "0.0.0-"; git describe --always; }`
-pomVersion=`xpath -q -e "project/version/text()" pom.xml`
+#pomVersion=`xpath -q -e "project/version/text()" pom.xml`
+pomVersion=`java -cp /home/carlo/xpath xpath pom.xml "/project/version/text()"`
 localStage=`pwd`/local-staging-repo
 
 mvn -DtagNameFormat="@{project.version}" -DreleaseVersion=${version} -DdevelopmentVersion=${pomVersion} -DpushChanges=false -DlocalCheckout=true -DpreparationGoals=initialize -DstagingRepository=local::default::file://${localStage} release:prepare release:stage -B
